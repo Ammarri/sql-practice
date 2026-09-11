@@ -1,5 +1,4 @@
-# sql-practice
-# T-SQL / MS SQL Server
+# SQL Practice — T-SQL / MS SQL Server
  
 [Українська версія](README.uk.md)
  
@@ -135,3 +134,18 @@ Kept for reference — not a strict rubric.
 | `unique_customers_per_employee.sql` | Unique customers per employee | Intermediate |
 | `top10_products_sales_and_avg_price.sql` | Top 10 products by units sold, with average list price and average post-discount price | Advanced |
 | `orders_summary_by_country_rollup.sql` | Orders and freight by country with a ROLLUP grand-total row | Advanced |
+
+## 05 — HAVING group filters (10 items)
+
+| File | What it does | Level |
+|---|---|---|
+| `most_active_customers_having_count.sql` | Customers with more than 5 orders | Intermediate |
+| `high_freight_shipping_destinations.sql` | Countries where total freight exceeds $1000 | Intermediate |
+| `suppliers_avg_price_range.sql` | Suppliers whose average product price falls between $20 and $50 | Intermediate |
+| `active_customers_1997_having_where.sql` | Customers who placed more than 3 orders in 1997 | Intermediate |
+| `categories_wide_price_range.sql` | Categories containing both very cheap (under $10) and very expensive (over $50) products | Advanced |
+| `employees_high_volume_high_freight.sql` | Employees with over 30 orders and average freight above $60 | Advanced |
+| `suppliers_expensive_products_where_vs_having.sql` | Suppliers with more than 3 products over $20, compared against suppliers whose overall average price exceeds $20 | Advanced |
+| `having_without_group_by_threshold.sql` | Total order count and average freight, returned only if total orders exceed a threshold (whole table as one group) | Advanced |
+| `employee_yearly_workload_classification.sql` | Order count and workload label (High/Medium/Low) per employee per year, filtered to years with at least 10 orders | Advanced |
+| `categories_three_condition_filter.sql` | Categories meeting three conditions at once: over 8 products, average price above $20, at least one product over $100 | Advanced |
