@@ -149,3 +149,28 @@ Kept for reference — not a strict rubric.
 | `having_without_group_by_threshold.sql` | Total order count and average freight, returned only if total orders exceed a threshold (whole table as one group) | Advanced |
 | `employee_yearly_workload_classification.sql` | Order count and workload label (High/Medium/Low) per employee per year, filtered to years with at least 10 orders | Advanced |
 | `categories_three_condition_filter.sql` | Categories meeting three conditions at once: over 8 products, average price above $20, at least one product over $100 | Advanced |
+
+## 06 — JOINs (20 items)
+
+| File | What it does | Level |
+|---|---|---|
+| `orders_with_customer_names.sql` | Orders with company names and countries | Intermediate |
+| `products_with_category_names.sql` | Products with category names instead of IDs | Intermediate |
+| `orders_with_employee_names.sql` | Orders with full manager names as one field | Intermediate |
+| `order_details_with_product_names.sql` | Order line details with product names, first 50 rows | Intermediate |
+| `category_summary_avg_price.sql` | Product count and average price per category | Intermediate |
+| `all_customers_order_count.sql` | All customers with order count, including those who never ordered | Intermediate |
+| `customers_with_no_orders.sql` | Customers registered but never placed an order — anti-join pattern | Intermediate |
+| `suppliers_with_product_count.sql` | Suppliers with product count, including suppliers with no products | Intermediate |
+| `products_never_ordered.sql` | Products that have never appeared in any order — anti-join pattern | Intermediate |
+| `customers_freight_total.sql` | Order count and total freight per customer, zeros instead of NULL for inactive customers | Intermediate |
+| `left_join_on_vs_where_comparison.sql` | Same LEFT JOIN written two ways: filter in ON vs filter in WHERE | Intermediate |
+| `employees_with_manager_names.sql` | Each employee with their direct manager's name; top of hierarchy shows NULL | Intermediate |
+| `employee_pairs_same_city.sql` | All pairs of employees working in the same city, each pair listed once | Advanced |
+| `customers_orders_full_audit.sql` | Data consistency audit: customers without orders and orders without a customer in one query | Advanced |
+| `orders_customer_employee_report.sql` | Full order report: order number, date, client name, manager name, delivery country | Intermediate |
+| `order_details_full_chain_1997.sql` | 1997 order lines with client name, product name and category across four joined tables | Advanced |
+| `manager_sales_stats.sql` | Per manager: unique customer count, order count and total freight | Intermediate |
+| `manager_category_matrix.sql` | CROSS JOIN planning matrix of all manager–category combinations, verified against actual sales coverage | Advanced |
+| `supplier_profitability_ranking.sql` | Suppliers ranked by total stock value with product count and average price | Intermediate |
+| `sales_geography_report.sql` | Sales geography: unique customers, order count and average freight per country, countries with more than one customer only | Advanced |
